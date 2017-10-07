@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.afsar.framework.tests.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.116 s <<< FAILURE! - in com.afsar.framework.tests.LoginTest
+LoginFunctionality(com.afsar.framework.tests.LoginTest)  Time elapsed: 21.989 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with css selector == *[name='userName']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'M2B-D-2WRM6C2', ip: '10.190.107.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:40579/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: a5c26204-30ba-4503-b388-350861c5ab09
+*** Element info: {Using=name, value=userName}
+	at com.afsar.framework.tests.LoginTest.LoginFunctionality(LoginTest.java:28)
+
