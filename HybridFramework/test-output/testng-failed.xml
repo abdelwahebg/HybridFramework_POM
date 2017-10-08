@@ -7,6 +7,7 @@
         <methods>
           <include name="init"/>
           <include name="LoginFunctionality"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.afsar.framework.tests.LoginTest -->
     </classes>
