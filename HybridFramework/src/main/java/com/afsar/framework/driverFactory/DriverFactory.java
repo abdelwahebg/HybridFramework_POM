@@ -12,10 +12,11 @@ import com.afsar.framework.utility.Log;
 
 public class DriverFactory {
 
-	private static WebDriver driver;
+	//private static WebDriver driver;
 
 	//@Parameters("BROWSER")
 	public static WebDriver OpenBrowser(String BROWSER) throws Exception{
+		 WebDriver driver=null;
 		try{
 			if(BROWSER.equals("Mozilla")){
 				driver = new FirefoxDriver();

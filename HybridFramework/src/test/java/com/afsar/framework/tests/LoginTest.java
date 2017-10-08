@@ -18,7 +18,7 @@ import com.afsar.framework.driverFactory.Driver;
 import com.afsar.framework.driverFactory.DriverFactory;
 
 public class LoginTest{
-	//private  WebDriver driver1;
+
 	private  WebDriver driver;
 	@BeforeClass
 	@Parameters("BROWSER")
