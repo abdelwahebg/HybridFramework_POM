@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25343" started-at="2017-10-08T05:02:04Z" finished-at="2017-10-08T05:02:30Z">
+  <suite name="Default suite" duration-ms="31329" started-at="2017-10-08T05:10:46Z" finished-at="2017-10-08T05:11:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25343" started-at="2017-10-08T05:02:04Z" finished-at="2017-10-08T05:02:30Z">
+    <test name="Default test" duration-ms="31329" started-at="2017-10-08T05:10:46Z" finished-at="2017-10-08T05:11:17Z">
       <class name="com.afsar.framework.tests.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.afsar.framework.tests.LoginTest@7c16905e]" name="init" is-config="true" duration-ms="7120" started-at="2017-10-08T10:32:04Z" finished-at="2017-10-08T10:32:11Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.afsar.framework.tests.LoginTest@7c16905e]" name="init" is-config="true" duration-ms="6989" started-at="2017-10-08T10:40:46Z" finished-at="2017-10-08T10:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="LoginFunctionality()[pri:0, instance:com.afsar.framework.tests.LoginTest@7c16905e]" name="LoginFunctionality" duration-ms="17470" started-at="2017-10-08T10:32:11Z" finished-at="2017-10-08T10:32:29Z">
+        <test-method status="PASS" signature="LoginFunctionality()[pri:0, instance:com.afsar.framework.tests.LoginTest@7c16905e]" name="LoginFunctionality" duration-ms="20487" started-at="2017-10-08T10:40:53Z" finished-at="2017-10-08T10:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFunctionality -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@7c16905e]" name="teardown" is-config="true" duration-ms="723" started-at="2017-10-08T10:32:29Z" finished-at="2017-10-08T10:32:30Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@7c16905e]" name="teardown" is-config="true" duration-ms="3816" started-at="2017-10-08T10:41:14Z" finished-at="2017-10-08T10:41:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
