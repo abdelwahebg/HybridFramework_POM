@@ -12,14 +12,18 @@ import org.testng.annotations.Test;
 
 import com.afsar.framework.BaseClass;
 import com.afsar.framework.actions.MercuryHomePage_Action;
+import com.afsar.framework.driverFactory.Driver;
+import com.afsar.framework.driverFactory.DriverFactory;
 
 public class LoginTest{
-	public  WebDriver driver;
+	//private  WebDriver driver1;
+	private  WebDriver driver;
 	@BeforeClass
-	public void init(){
+	public void init() throws Exception{
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Afsar\\git\\HybridFramework_POM\\HybridFramework\\Drivers\\chromedriver.exe");
-		driver= new ChromeDriver();
+		
+		Driver.setCurrentDriver(DriverFactory.OpenBrowser("Chrome"));
+		driver=Driver.getCurrentDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		new BaseClass(driver);
