@@ -14,8 +14,8 @@ public class DriverFactory {
 
 	private static WebDriver driver;
 
-	@Parameters("BROWSER")
-	public static WebDriver OpenBrowser(@Optional("Chrome") String BROWSER) throws Exception{
+	//@Parameters("BROWSER")
+	public static WebDriver OpenBrowser(String BROWSER) throws Exception{
 		try{
 			if(BROWSER.equals("Mozilla")){
 				driver = new FirefoxDriver();

@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.afsar.framework.BaseClass;
@@ -19,10 +21,9 @@ public class LoginTest{
 	//private  WebDriver driver1;
 	private  WebDriver driver;
 	@BeforeClass
-	public void init() throws Exception{
-		
-		
-		Driver.setCurrentDriver(DriverFactory.OpenBrowser("Chrome"));
+	@Parameters("BROWSER")
+	public void init(@Optional("Chrome")String BROWSER) throws Exception{
+		Driver.setCurrentDriver(DriverFactory.OpenBrowser(BROWSER));
 		driver=Driver.getCurrentDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
