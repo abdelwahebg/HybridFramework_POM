@@ -4,13 +4,13 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseClass {
 	
-	public static WebDriver driver;
+	protected static  WebDriver driver;
 	
 	public static Boolean bResult;
 	
 	public BaseClass(WebDriver driver){
 		
-		BaseClass.driver=driver;
+		this.driver=driver;
 		BaseClass.bResult=true;
 	}
 

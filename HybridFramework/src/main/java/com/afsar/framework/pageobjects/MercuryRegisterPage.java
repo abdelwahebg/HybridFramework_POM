@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.afsar.framework.BaseClass;
+import com.afsar.framework.driverFactory.Driver;
 
 public class MercuryRegisterPage extends BaseClass{
 	
@@ -20,8 +21,8 @@ public class MercuryRegisterPage extends BaseClass{
 	@FindBy(linkText="SIGN-OFF")
 	WebElement signoff;
 	public MercuryRegisterPage() {
-		super(driver);
-		PageFactory.initElements(driver, this);
+		super(Driver.getCurrentDriver());
+	PageFactory.initElements(Driver.getCurrentDriver(), this);
 	}
 	
 	public void signOFF()

@@ -9,10 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.afsar.framework.BaseClass;
-
+import com.afsar.framework.driverFactory.Driver;
 
 public class MercuryToursHomePage extends BaseClass{
-	
+
 	
 	private static WebElement element = null;
 	@FindBy(linkText="SIGN-ON")
@@ -25,30 +25,30 @@ public class MercuryToursHomePage extends BaseClass{
 	WebElement signin;
 	/*@FindBy(linkText="REGISTER")
 	WebElement link_register;*/
-	
-	
+
+
 	public MercuryToursHomePage() {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-	public static WebElement txt_ProductName() throws Exception{
-        try{ 
-        	 element = driver.findElement(By.linkText("REGISTER"));
-            //Log.info("Product name is found on the Confirmation Page");
-        	 System.out.println("Product name is found on the Confirmation Page");
-        }catch (Exception e){
-       		//Log.error("Product name is not found on the Confirmation Page");
-       		throw(e);
-       		}
-       	return element;
-    }
-	
-	
+
+	public static WebElement link_Register() throws Exception{
+		try{ 
+			element = Driver.getCurrentDriver().findElement(By.linkText("REGISTER"));
+
+			System.out.println("Register button is found ");
+		}catch (Exception e){
+			System.out.println("Register button is not  found ");
+			throw(e);
+		}
+		return element;
+	}
+
+
 	public void sendURL(String url)
 	{
 		driver.get(url);
+		System.out.println("URL is sent succesfully..");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
@@ -56,17 +56,22 @@ public class MercuryToursHomePage extends BaseClass{
 	public void clickRegister()
 	{
 		sign_on.click();
+		System.out.println("Clicked on the Sign -on button ");
 	}
 	public void login()
 	{
 		userName.sendKeys("askmail29");
+		System.out.println("User name Entered ");
 		password.sendKeys("askmail29");
+		System.out.println("Password entered ");
 		signin.click();	
 		
+		System.out.println("Sign -in clicked ");
+
 	}
 	public void Click_reogister() throws Exception{
-		
-		txt_ProductName().click();
+
+		link_Register().click();
 	}
-	
+
 }
