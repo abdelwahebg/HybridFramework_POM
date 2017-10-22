@@ -26,7 +26,7 @@ public class DriverFactory {
 				//driver.get(Constant.URL);
 				Log.info("Web application launched successfully");
 			}else if(BROWSER.equalsIgnoreCase("Chrome")){
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Afsar\\git\\HybridFramework_POM\\HybridFramework\\Drivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 				driver = new ChromeDriver();
 				Log.info("New driver instantiated");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

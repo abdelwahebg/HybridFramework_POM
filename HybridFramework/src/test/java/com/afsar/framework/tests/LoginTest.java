@@ -37,50 +37,53 @@ public class LoginTest{
 		//This is Baseclass constructor (Initializaton)
 		new BaseClass(Driver.getCurrentDriver());
 	}
-	
+
 	@Test(description="This is first test same as first ")
 	public void LoginFunctionality() throws Exception{
-		
+
 		System.out.println("*********Running first Test Case *********");
 		MercuryHomePage_Action.Login_Action();
 		MercuryHomePage_Action.Register_Action();
-		
+
 		System.out.println("PASSED : First test case : Login Successful..");
-		
+
 	}
-	
+
 	@Test(description="This is second test same as first ")
 	public void LoginFunctionality1() throws Exception{
-		
+
 		System.out.println("*********Running second Test Case *********");
 		MercuryHomePage_Action.Login_Action();
 		MercuryHomePage_Action.Register_Action();
-		
+
 		System.out.println("PASSED : second test case : Login Successful..");
-		
+
 	}
-	
+
 	@Test(description="This is third test same as first ")
 	public void LoginFunctionality2() throws Exception{
-		
+
 		System.out.println("*********Running third  Test Case *********");
 		MercuryHomePage_Action.Login_Action();
 		MercuryHomePage_Action.Register_Action();
-		
+
 		System.out.println("PASSED : third test case : Login Successful..");
 	}
-	
+
 	@AfterMethod
 	public void teardown(){
-		
+
 		System.out.println("****** In After Method tear down *********");
 		System.out.println("Removing driver instance from current thread and closing all sesions");
 		//Driver.getCurrentDriver().quit();
-		Driver.QuitDriver();
+
+		Driver.clearCurrentDriver();
 	}
-	
+
 	@AfterTest
 	public void aftertest(){
-		Driver.clearCurrentDriver();
+
+		System.out.println("*******Executing AfterTest *******");
+		//Driver.clearCurrentDriver();
 	}
 }

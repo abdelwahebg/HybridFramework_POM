@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="methods">
   <parameter name="BROWSER" value="Chrome"/>
   <listeners>
     <listener class-name="com.afsar.framework.utility.Listeners"/>
   </listeners>
-  <test name="Test(failed)" parallel="tests">
+  <test name="Test(failed)" parallel="methods">
     <classes>
       <class name="com.afsar.framework.tests.LoginTest">
         <methods>
           <include name="LoginFunctionality1"/>
           <include name="init"/>
+          <include name="aftertest"/>
+          <include name="LoginFunctionality"/>
           <include name="teardown"/>
           <include name="LoginFunctionality2"/>
         </methods>
