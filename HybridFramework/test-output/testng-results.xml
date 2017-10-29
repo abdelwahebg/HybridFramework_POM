@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38155" started-at="2017-10-22T15:37:53Z" finished-at="2017-10-22T15:38:31Z">
+  <suite name="Default suite" duration-ms="71499" started-at="2017-10-29T03:30:58Z" finished-at="2017-10-29T03:32:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38155" started-at="2017-10-22T15:37:53Z" finished-at="2017-10-22T15:38:31Z">
+    <test name="Default test" duration-ms="71499" started-at="2017-10-29T03:30:58Z" finished-at="2017-10-29T03:32:10Z">
       <class name="com.afsar.framework.tests.LoginTest">
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="init" is-config="true" duration-ms="6118" started-at="2017-10-22T21:07:53Z" finished-at="2017-10-22T21:07:59Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="init" is-config="true" duration-ms="24165" started-at="2017-10-29T09:00:58Z" finished-at="2017-10-29T09:01:23Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="LoginFunctionality()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="LoginFunctionality" duration-ms="17120" started-at="2017-10-22T21:07:59Z" description="This is first test same as first " finished-at="2017-10-22T21:08:16Z">
+        <test-method status="PASS" signature="LoginFunctionality()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="LoginFunctionality" duration-ms="20482" started-at="2017-10-29T09:01:23Z" description="This is first test same as first " finished-at="2017-10-29T09:01:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFunctionality -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="teardown" is-config="true" duration-ms="718" started-at="2017-10-22T21:08:16Z" finished-at="2017-10-22T21:08:17Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="teardown" is-config="true" duration-ms="1202" started-at="2017-10-29T09:01:43Z" finished-at="2017-10-29T09:01:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="init" is-config="true" duration-ms="3562" started-at="2017-10-22T21:08:17Z" finished-at="2017-10-22T21:08:20Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="init" is-config="true" duration-ms="7177" started-at="2017-10-29T09:01:44Z" finished-at="2017-10-29T09:01:51Z">
           <params>
             <param index="0">
               <value>
@@ -37,18 +37,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="LoginFunctionality1()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="LoginFunctionality1" duration-ms="2669" started-at="2017-10-22T21:08:20Z" description="This is second test same as first " finished-at="2017-10-22T21:08:23Z">
+        <test-method status="FAIL" signature="LoginFunctionality1()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="LoginFunctionality1" duration-ms="5685" started-at="2017-10-29T09:01:51Z" description="This is second test same as first " finished-at="2017-10-29T09:01:57Z">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'AFSAR-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+System info: host: 'AFSAR-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'AFSAR-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+System info: host: 'AFSAR-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -93,11 +93,11 @@ Driver info: driver.version: RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFunctionality1 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="teardown" is-config="true" duration-ms="897" started-at="2017-10-22T21:08:23Z" finished-at="2017-10-22T21:08:24Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="teardown" is-config="true" duration-ms="772" started-at="2017-10-29T09:01:57Z" finished-at="2017-10-29T09:01:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="init" is-config="true" duration-ms="3607" started-at="2017-10-22T21:08:24Z" finished-at="2017-10-22T21:08:27Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="init" is-config="true" duration-ms="6738" started-at="2017-10-29T09:01:58Z" finished-at="2017-10-29T09:02:05Z">
           <params>
             <param index="0">
               <value>
@@ -108,18 +108,18 @@ Driver info: driver.version: RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="LoginFunctionality2()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="LoginFunctionality2" duration-ms="2701" started-at="2017-10-22T21:08:27Z" description="This is third test same as first " finished-at="2017-10-22T21:08:30Z">
+        <test-method status="FAIL" signature="LoginFunctionality2()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="LoginFunctionality2" duration-ms="4272" started-at="2017-10-29T09:02:05Z" description="This is third test same as first " finished-at="2017-10-29T09:02:09Z">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'AFSAR-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+System info: host: 'AFSAR-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'AFSAR-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+System info: host: 'AFSAR-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -164,11 +164,11 @@ Driver info: driver.version: RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFunctionality2 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="teardown" is-config="true" duration-ms="712" started-at="2017-10-22T21:08:30Z" finished-at="2017-10-22T21:08:31Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="teardown" is-config="true" duration-ms="834" started-at="2017-10-29T09:02:09Z" finished-at="2017-10-29T09:02:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="aftertest" is-config="true" duration-ms="1" started-at="2017-10-22T21:08:31Z" finished-at="2017-10-22T21:08:31Z">
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.afsar.framework.tests.LoginTest@d2cc05a]" name="aftertest" is-config="true" duration-ms="1" started-at="2017-10-29T09:02:10Z" finished-at="2017-10-29T09:02:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->
