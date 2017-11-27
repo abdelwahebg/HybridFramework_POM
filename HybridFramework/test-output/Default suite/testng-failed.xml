@@ -7,7 +7,6 @@
         <methods>
           <include name="LoginFunctionality1"/>
           <include name="init"/>
-          <include name="aftertest"/>
           <include name="teardown"/>
           <include name="LoginFunctionality2"/>
         </methods>

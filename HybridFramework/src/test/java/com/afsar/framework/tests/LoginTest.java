@@ -1,26 +1,23 @@
 package com.afsar.framework.tests;
 
+import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.afsar.framework.BaseClass;
-import com.afsar.framework.actions.MercuryHomePage_Action;
-import com.afsar.framework.driverFactory.Driver;
-import com.afsar.framework.driverFactory.DriverFactory;
+import com.afsar.framework.TestBase;
 
-public class LoginTest{
+public class LoginTest extends TestBase{
+
+	public LoginTest() throws Exception {
+		super();
+	}
 
 	private  WebDriver driver;
 	@BeforeMethod
@@ -29,22 +26,21 @@ public class LoginTest{
 		System.out.println("****** In Before Method init method *********");
 		System.out.println("Driver instanceis created and  set current local thread");
 		//Opening desired Browser driver instance
-		driver=DriverFactory.OpenBrowser(BROWSER);
+		getDriver().get("https://www.google.com");
 		//Setting Current driver with threadLocal
-		Driver.setCurrentDriver(driver);
-		Driver.getCurrentDriver().manage().window().maximize();
-		Driver.getCurrentDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
+		getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//This is Baseclass constructor (Initializaton)
-		new BaseClass(Driver.getCurrentDriver());
 	}
 
 	@Test(description="This is first test same as first ")
 	public void LoginFunctionality() throws Exception{
 
 		System.out.println("*********Running first Test Case *********");
-		MercuryHomePage_Action.Login_Action();
-		MercuryHomePage_Action.Register_Action();
-
+		
+		getPagefactory().getHomepage().Login_Action();
+		getPagefactory().getRegisterPage().Register_Action();
+		
 		System.out.println("PASSED : First test case : Login Successful..");
 
 	}
@@ -53,8 +49,8 @@ public class LoginTest{
 	public void LoginFunctionality1() throws Exception{
 
 		System.out.println("*********Running second Test Case *********");
-		MercuryHomePage_Action.Login_Action();
-		MercuryHomePage_Action.Register_Action();
+		getPagefactory().getHomepage().Login_Action();
+		getPagefactory().getRegisterPage().Register_Action();
 
 		System.out.println("PASSED : second test case : Login Successful..");
 
@@ -64,8 +60,8 @@ public class LoginTest{
 	public void LoginFunctionality2() throws Exception{
 
 		System.out.println("*********Running third  Test Case *********");
-		MercuryHomePage_Action.Login_Action();
-		MercuryHomePage_Action.Register_Action();
+		getPagefactory().getHomepage().Login_Action();
+		getPagefactory().getRegisterPage().Register_Action();
 
 		System.out.println("PASSED : third test case : Login Successful..");
 	}
@@ -77,7 +73,7 @@ public class LoginTest{
 		System.out.println("Removing driver instance from current thread and closing all sesions");
 		//Driver.getCurrentDriver().quit();
 
-		Driver.clearCurrentDriver();
+		//getDriver().close();
 	}
 
 	@AfterTest

@@ -11,30 +11,58 @@ import org.openqa.selenium.support.PageFactory;
 import com.afsar.framework.BaseClass;
 import com.afsar.framework.driverFactory.Driver;
 
-public class MercuryToursHomePage extends BaseClass{
+public class MercuryToursHomePage {
 
 	
 	private static WebElement element = null;
+	private WebDriver driver;
+	
 	@FindBy(linkText="SIGN-ON")
-	WebElement sign_on;
+	private WebElement sign_on;
 	@FindBy(name="userName")
-	WebElement userName;
+	private WebElement userName;
 	@FindBy(name="password")
-	WebElement password;
+	private WebElement password;
 	@FindBy(name="login")
-	WebElement signin;
-	/*@FindBy(linkText="REGISTER")
-	WebElement link_register;*/
+	private WebElement signin;
+	@FindBy(linkText="REGISTER")
+	private WebElement link_register;
+	
+	
+	public WebElement getLink_register() {
+		return link_register;
+	}
+
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getSign_on() {
+		return sign_on;
+	}
+
+	public WebElement getUserName() {
+		return userName;
+	}
+
+	public WebElement getPassword() {
+		return password;
+	}
+
+	public WebElement getSignin() {
+		return signin;
+	}
 
 
-	public MercuryToursHomePage() {
-		super(driver);
+
+	public MercuryToursHomePage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	public static WebElement link_Register() throws Exception{
+	/*public  WebElement link_Register() throws Exception{
 		try{ 
-			element = Driver.getCurrentDriver().findElement(By.linkText("REGISTER"));
+			element = driver.findElement(By.linkText("REGISTER"));
 
 			System.out.println("Register button is found ");
 		}catch (Exception e){
@@ -42,10 +70,10 @@ public class MercuryToursHomePage extends BaseClass{
 			throw(e);
 		}
 		return element;
-	}
+	}*/
 
 
-	public void sendURL(String url)
+	/*public void sendURL(String url)
 	{
 		driver.get(url);
 		System.out.println("URL is sent succesfully..");
@@ -73,5 +101,5 @@ public class MercuryToursHomePage extends BaseClass{
 
 		link_Register().click();
 	}
-
+*/
 }

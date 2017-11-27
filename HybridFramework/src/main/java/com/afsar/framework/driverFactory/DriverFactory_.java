@@ -10,12 +10,12 @@ import org.testng.annotations.Parameters;
 
 import com.afsar.framework.utility.Log;
 
-public class DriverFactory {
+public class DriverFactory_ {
 
 	//private static WebDriver driver;
 
 	//@Parameters("BROWSER")
-	public static WebDriver OpenBrowser(String BROWSER) throws Exception{
+	public  WebDriver OpenBrowser(String BROWSER) throws Exception{
 		 WebDriver driver=null;
 		try{
 			if(BROWSER.equals("Mozilla")){

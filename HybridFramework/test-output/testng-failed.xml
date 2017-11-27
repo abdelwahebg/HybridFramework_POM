@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" parallel="true">
+  <test name="Test(failed)" parallel="true">
     <classes>
       <class name="com.afsar.framework.tests.LoginTest">
         <methods>
-          <include name="LoginFunctionality1"/>
           <include name="init"/>
           <include name="aftertest"/>
+          <include name="LoginFunctionality"/>
           <include name="teardown"/>
           <include name="LoginFunctionality2"/>
         </methods>
       </class> <!-- com.afsar.framework.tests.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

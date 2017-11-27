@@ -1,27 +1,31 @@
 package com.afsar.framework.actions;
 
+import org.openqa.selenium.WebDriver;
+
 import com.afsar.framework.pageobjects.MercuryRegisterPage;
 import com.afsar.framework.pageobjects.MercuryToursHomePage;
 
 public class MercuryHomePage_Action {
-	private static MercuryToursHomePage hm=new MercuryToursHomePage();
-	private static MercuryRegisterPage register = new MercuryRegisterPage();
+	
+	private static MercuryToursHomePage hm;
+	
+	public MercuryHomePage_Action(WebDriver driver){
+		hm=new MercuryToursHomePage(driver);
+		
+	}
+	
+	//private static MercuryRegisterPage register = new MercuryRegisterPage();
 
-	public static  void Login_Action(){
+	public void Login_Action(){
 		System.out.println("**** Executing Logine Action *********");
-		hm.sendURL("http://www.newtours.demoaut.com/");
-		hm.clickRegister();
-		hm.login();
+		hm.getDriver().get("http://www.newtours.demoaut.com/");
+		hm.getSign_on().click();
+		hm.getUserName().sendKeys("askmail29");
+		hm.getPassword().sendKeys("askmail29");
+		hm.getSignin().click();
 	}
 
-	public static void Register_Action() throws Exception{
-
-		System.out.println("****** Executing Register Action *********");
-		register.signOFF();
-		Thread.sleep(5000);
-		hm.Click_reogister();
-		register.userInfo();
-	}
+	
 
 
 }
