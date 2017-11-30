@@ -12,14 +12,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.afsar.framework.TestBase;
+import com.afsar.framework.TestBase2;
 
-public class LoginTest extends TestBase{
+public class LoginTest extends TestBase2{
 
-	public LoginTest() throws Exception {
+	/*public LoginTest() throws Exception {
 		super();
 	}
-
-	private  WebDriver driver;
+*/
+	/*private  WebDriver driver;
 	@BeforeMethod
 	@Parameters("BROWSER")
 	public void init(@Optional("Chrome")String BROWSER) throws Exception{
@@ -31,7 +32,7 @@ public class LoginTest extends TestBase{
 	
 		getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//This is Baseclass constructor (Initializaton)
-	}
+	}*/
 
 	@Test(description="This is first test same as first ")
 	public void LoginFunctionality() throws Exception{
@@ -71,7 +72,7 @@ public class LoginTest extends TestBase{
 
 		System.out.println("****** In After Method tear down *********");
 		System.out.println("Removing driver instance from current thread and closing all sesions");
-		//Driver.getCurrentDriver().quit();
+		clearCurrentDriver();
 
 		//getDriver().close();
 	}
@@ -80,6 +81,6 @@ public class LoginTest extends TestBase{
 	public void aftertest(){
 
 		System.out.println("*******Executing AfterTest *******");
-		//Driver.clearCurrentDriver();
+		//clearCurrentDriver();
 	}
 }

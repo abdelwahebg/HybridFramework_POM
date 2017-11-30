@@ -2,7 +2,7 @@ package com.afsar.framework;
 
 import org.openqa.selenium.WebDriver;
 
-import com.afsar.framework.driverFactory.DriverFactory_;
+import com.afsar.framework.driverFactory.DriverFactory;
 
 public class TestBase {
 
@@ -10,7 +10,7 @@ public static WebDriver driver;
 PageFactoryObject pagefactory;
 
 
-protected DriverFactory_ selenium=new DriverFactory_();
+private DriverFactory selenium=new DriverFactory();
 
 	public TestBase() throws Exception{
 	driver=selenium.OpenBrowser("Chrome");

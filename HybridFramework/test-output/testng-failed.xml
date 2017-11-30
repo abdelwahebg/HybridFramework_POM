@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="true">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="true">
   <test name="Test(failed)" parallel="true">
     <classes>
       <class name="com.afsar.framework.tests.LoginTest">
         <methods>
-          <include name="init"/>
+          <include name="LoginFunctionality1"/>
           <include name="aftertest"/>
-          <include name="LoginFunctionality"/>
           <include name="teardown"/>
           <include name="LoginFunctionality2"/>
+          <include name="before_method"/>
         </methods>
       </class> <!-- com.afsar.framework.tests.LoginTest -->
     </classes>

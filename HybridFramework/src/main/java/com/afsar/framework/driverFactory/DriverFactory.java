@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 
 import com.afsar.framework.utility.Log;
 
-public class DriverFactory_ {
+public class DriverFactory {
 
 	//private static WebDriver driver;
 

@@ -7,8 +7,8 @@ import com.afsar.framework.actions.MercuryRegisterPage_Action;
 
 public class PageFactoryObject {
 	
-	private MercuryRegisterPage_Action reg;
-	private MercuryHomePage_Action homepage;
+	private static  MercuryRegisterPage_Action reg;
+	private static  MercuryHomePage_Action homepage;
 	
 	public PageFactoryObject(WebDriver driver){
 		

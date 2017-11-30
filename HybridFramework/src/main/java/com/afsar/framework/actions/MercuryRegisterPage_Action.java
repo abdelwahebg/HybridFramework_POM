@@ -7,8 +7,8 @@ import com.afsar.framework.pageobjects.MercuryToursHomePage;
 
 public class MercuryRegisterPage_Action {
 	
-	private MercuryRegisterPage register;
-	private static MercuryToursHomePage hm;
+	private static MercuryRegisterPage register;
+	private static  MercuryToursHomePage hm;
 	
 	public MercuryRegisterPage_Action(WebDriver driver){
 		

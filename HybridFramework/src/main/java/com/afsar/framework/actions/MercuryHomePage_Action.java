@@ -7,7 +7,7 @@ import com.afsar.framework.pageobjects.MercuryToursHomePage;
 
 public class MercuryHomePage_Action {
 	
-	private static MercuryToursHomePage hm;
+	private  MercuryToursHomePage hm;
 	
 	public MercuryHomePage_Action(WebDriver driver){
 		hm=new MercuryToursHomePage(driver);
